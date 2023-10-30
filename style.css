@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Poiret+One&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 100px;
+  background-color: #98e4ff;
+}
+
+nav h1 {
+  color: #4959b9;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+nav .nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav .search-bar input {
+  position: relative;
+  height: 25px;
+  width: 225px;
+  padding-left: 25px;
+  border-radius: 4px;
+  border: none;
+}
+
+nav .search-bar input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+nav .search-bar span {
+  position: absolute;
+  z-index: 9;
+  margin: 2px;
+  color: #98e4ff;
+}
+
+/* TITLE AND SCROL BUTTON */
+
+.title-scrole-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: 100px;
+  font-family: "Imprima", sans-serif;
+  font-size: 2rem;
+}
+
+.title-scrole-button p {
+  margin-right: 8px;
+}
+
+.title-scrole-button span {
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+  background-color: #4959b9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.title-scrole-button span:hover {
+  color: #4959b9;
+  background-color: #98e4ff;
+}
+
+/* CARD */
+
+.container-card {
+  display: flex;
+  margin: 40px 100px 80px;
+  overflow-y: scroll;
+}
+
+.container-card::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 220px;
+  /* height: 300px; */
+  margin-right: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(211, 244, 255, 1) 45%,
+    rgba(152, 228, 255, 1) 45%
+  );
+  border-radius: 10px;
+}
+
+.card img {
+  width: 120px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.card p {
+  margin-left: 15px;
+  font-family: "Imprima", sans-serif;
+  font-size: 1.1rem;
+  line-height: 0.6;
+}
+
+.container-method-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin: 30px 4px 14px;
+}
+
+/* BUTTON METHOD */
+
+.button-method {
+  margin-right: 8px;
+  padding: 4px 6px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  font-family: "Imprima", sans-serif;
+}
+
+/* ADD */
+.button-add {
+  background: rgba(73, 89, 185, 0.7);
+  color: #98e4ff;
+}
+
+.button-add:hover {
+  background: #e6f8ff;
+  color: rgba(73, 89, 185, 0.7);
+}
+
+/* DONE */
+
+.button-done {
+  background-color: #00c213;
+  color: #e6f8ff;
+}
+.button-done:hover {
+  background-color: #e6f8ff;
+  color: #00c213;
+}
+
+/* DELETE */
+
+.button-delete {
+  background-color: #d80000;
+  color: #e6f8ff;
+}
+.button-delete:hover {
+  background-color: #e6f8ff;
+  color: #d80000;
+}
+
+/* REPLECE */
+
+.button-replece {
+  background-color: #eb8d00;
+  color: #e6f8ff;
+}
+.button-replece:hover {
+  background-color: #e6f8ff;
+  color: #eb8d00;
+}
