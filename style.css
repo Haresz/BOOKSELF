@@ -48,6 +48,17 @@ nav .search-bar span {
   color: #98e4ff;
 }
 
+nav .nav-fitur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4959b9;
+  font-family: "Imprima", sans-serif;
+  font-size: 1.5rem;
+}
+
+nav nav
+
 /* TITLE AND SCROL BUTTON */
 
 .title-scrole-button {
