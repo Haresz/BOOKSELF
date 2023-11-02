@@ -13,9 +13,40 @@
   <body>
     <nav>
       <div class="nav-fitur">
-        <span class="material-symbols-outlined"> arrow_back </span>
+        <a href="./index.html">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </a>
         <p>Tambah Buku</p>
       </div>
     </nav>
+
+    <form action="#" method="post">
+      <div class="container-label-input">
+        <label for="judul-buku">Judul Buku</label>
+        <input name="judul-buku" type="text" />
+      </div>
+      <div class="container-label-input">
+        <label for="pengarang-buku">Pengarang Buku</label>
+        <input name="pengarang-buku" type="text" />
+      </div>
+      <div class="container-label-input">
+        <label for="tahun-buku">Tahun Buku</label>
+        <input name="tahun-buku" type="number" />
+      </div>
+      <div class="container-label-input">
+        <label for="deskripsi-buku">Deskripsi</label>
+        <textarea
+          name="deskripsi-buku"
+          id="deskripsi-buku"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="container-label-input">
+        <label for="cover-buku">Cover Buku</label>
+        <input name="cover-buku" type="file" />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>

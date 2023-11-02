@@ -57,7 +57,9 @@ nav .nav-fitur {
   font-size: 1.5rem;
 }
 
-nav nav
+nav .nav-fitur p {
+  margin-left: 24px;
+}
 
 /* TITLE AND SCROL BUTTON */
 
@@ -190,4 +192,58 @@ nav nav
 .button-replece:hover {
   background-color: #e6f8ff;
   color: #eb8d00;
+}
+
+/* FORM INPUT */
+form {
+  margin: 80px 100px 0;
+}
+
+form .container-label-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-family: "Imprima", sans-serif;
+  font-size: 1.5rem;
+}
+
+form .container-label-input input {
+  width: 80%;
+  padding: 0 8px;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+form .container-label-input input:focus-visible {
+  border-color: black;
+  border-width: 1px;
+}
+
+form .container-label-input textarea {
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 80px;
+  max-height: 80px;
+  padding: 10px 8px;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 8px;
+}
+
+form input[type="submit"] {
+  min-width: 81%;
+  max-width: 81%;
+  min-height: 40px;
+  max-height: 40px;
+  margin-top: 80px;
+  margin-left: 19%;
+  background-color: #4959b9;
+  color: #e6f8ff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Imprima", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
