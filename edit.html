@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Buku</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-fitur">
+        <a href="./index.html">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </a>
+        <p>Edit Buku</p>
+      </div>
+    </nav>
+
+    <form action="#" method="post">
+      <div class="container-label-input">
+        <label for="judul-buku">Judul Buku</label>
+        <input name="judul-buku" type="text" />
+      </div>
+      <div class="container-label-input">
+        <label for="pengarang-buku">Pengarang Buku</label>
+        <input name="pengarang-buku" type="text" />
+      </div>
+      <div class="container-label-input">
+        <label for="tahun-buku">Tahun Buku</label>
+        <input name="tahun-buku" type="number" />
+      </div>
+      <div class="container-label-input">
+        <label for="deskripsi-buku">Deskripsi</label>
+        <textarea
+          name="deskripsi-buku"
+          id="deskripsi-buku"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="container-label-input">
+        <label for="cover-buku">Cover Buku</label>
+        <input name="cover-buku" type="file" />
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
