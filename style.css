@@ -247,3 +247,40 @@ form input[type="submit"] {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* DETAIL BUKU */
+
+.container-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 80px 100px 0;
+}
+
+.container-detail .cover-method img,
+.container-detail .cover-method #method-detail {
+  width: 300px;
+}
+
+#method-detail {
+  padding: 10px 95.99999px;
+}
+
+.container-detail .cover-method img {
+  margin-bottom: 40px;
+}
+
+.container-text {
+  margin-left: 30px;
+  font-family: "Imprima", sans-serif;
+}
+
+.container-text h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.container-text p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
