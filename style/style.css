@@ -117,6 +117,7 @@ nav .nav-fitur p {
     rgba(152, 228, 255, 1) 45%
   );
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .card img {
@@ -283,4 +284,5 @@ form input[type="submit"] {
 .container-text p {
   margin-top: 30px;
   line-height: 1.5;
+  text-align: justify;
 }
