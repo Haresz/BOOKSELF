@@ -1,11 +1,11 @@
-const data = [
+export const BOOKS: Book[] = [
   {
     id: "A1234",
     judul: "IKIGAI",
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
   {
     id: "A1235",
@@ -13,7 +13,7 @@ const data = [
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
   {
     id: "A1236",
@@ -21,7 +21,7 @@ const data = [
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
   {
     id: "A1237",
@@ -29,7 +29,7 @@ const data = [
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
   {
     id: "A1238",
@@ -37,7 +37,7 @@ const data = [
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
   {
     id: "A1239",
@@ -45,8 +45,8 @@ const data = [
     penulis: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
-    isCompleted: none,
+    isCompleted: false,
   },
 ];
 
-export { data };
+// window.localStorage.setItem("BOOKS", JSON.stringify(BOOKS));

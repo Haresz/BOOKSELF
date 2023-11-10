@@ -109,20 +109,18 @@ nav .nav-fitur p {
 
 .card {
   min-width: 220px;
-  /* height: 300px; */
   margin-right: 20px;
   background: linear-gradient(
     0deg,
-    rgba(211, 244, 255, 1) 45%,
-    rgba(152, 228, 255, 1) 45%
+    rgba(211, 244, 255, 1) 55%,
+    rgba(152, 228, 255, 1) 55%
   );
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .card img {
   width: 120px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 50px;
 }
 
@@ -149,6 +147,15 @@ nav .nav-fitur p {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   font-family: "Imprima", sans-serif;
+}
+
+/* HREF METHOD */
+
+.href-method {
+  margin: 0 15px;
+  font-family: "Imprima", sans-serif;
+  font-size: 1.1rem;
+  line-height: 0.5;
 }
 
 /* ADD */
