@@ -6,6 +6,7 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
   {
     id: "A1235",
@@ -14,6 +15,7 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
   {
     id: "A1236",
@@ -22,6 +24,7 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
   {
     id: "A1237",
@@ -30,6 +33,7 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
   {
     id: "A1238",
@@ -38,6 +42,7 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
   {
     id: "A1239",
@@ -46,5 +51,6 @@ export const BOOKS = [
     cover: "./src/IKIGAI.jpg",
     tahun: 2017,
     isCompleted: false,
+    isRecomended: true,
   },
 ];

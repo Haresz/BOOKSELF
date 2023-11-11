@@ -95,12 +95,21 @@ nav .nav-fitur p {
   background-color: #98e4ff;
 }
 
+.container-card {
+  overflow-y: auto;
+}
+
+#rekomendasiBuku::-webkit-scrollbar {
+  display: none;
+}
+
 /* CARD */
 
 .container-card {
   display: flex;
   margin: 40px 100px 80px;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .container-card::-webkit-scrollbar {

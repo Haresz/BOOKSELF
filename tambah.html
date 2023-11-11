@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tambah Buku</title>
     <link rel="stylesheet" href="./style/style.css" />
-
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <script src="./script/tambah.js"></script>
   </head>
   <body>
     <nav>
@@ -21,18 +21,18 @@
       </div>
     </nav>
 
-    <form action="#" method="post">
+    <form>
       <div class="container-label-input">
         <label for="judul-buku">Judul Buku</label>
-        <input name="judul-buku" type="text" />
+        <input id="judul-buku" name="judul-buku" type="text" />
       </div>
       <div class="container-label-input">
         <label for="pengarang-buku">Pengarang Buku</label>
-        <input name="pengarang-buku" type="text" />
+        <input id="pengarang-buku" name="pengarang-buku" type="text" />
       </div>
       <div class="container-label-input">
         <label for="tahun-buku">Tahun Buku</label>
-        <input name="tahun-buku" type="number" />
+        <input id="tahun-buku" name="tahun-buku" type="number" />
       </div>
       <div class="container-label-input">
         <label for="deskripsi-buku">Deskripsi</label>
@@ -45,10 +45,9 @@
       </div>
       <div class="container-label-input">
         <label for="cover-buku">Cover Buku</label>
-        <input name="cover-buku" type="file" />
+        <input id="cover-buku" name="cover-buku" type="file" />
       </div>
-      <input type="submit" value="Submit" />
+      <input id="submit" type="submit" value="Submit" />
     </form>
-    <script src="./script/script.js"></script>
   </body>
 </html>
