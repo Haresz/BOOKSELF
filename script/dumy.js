@@ -1,4 +1,4 @@
-export const BOOKS: Book[] = [
+export const BOOKS = [
   {
     id: "A1234",
     judul: "IKIGAI",
@@ -48,5 +48,3 @@ export const BOOKS: Book[] = [
     isCompleted: false,
   },
 ];
-
-// window.localStorage.setItem("BOOKS", JSON.stringify(BOOKS));

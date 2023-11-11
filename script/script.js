@@ -1,5 +1,3 @@
-import { BOOKS } from "./dumy";
-console.log(BOOKS);
 const rekomendasi = document.getElementById("coba");
 
 // CARD
