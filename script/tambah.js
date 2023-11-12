@@ -22,13 +22,10 @@ function add() {
     isRecomended: false,
   };
 
-  // const dataStorage = localStorage.getItem("rekomendasi");
-  const data = [];
-  console.log(data);
+  const dataStorage = localStorage.getItem("data");
+  const data = JSON.parse(dataStorage);
 
   data.push(todoObject);
-
-  console.log(data);
 
   localStorage.setItem("data", JSON.stringify(data));
 }

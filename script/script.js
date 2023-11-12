@@ -1,4 +1,6 @@
 import { BOOKS } from "./dumy.js";
+const dataStorage = localStorage.getItem("data");
+const data = JSON.parse(dataStorage);
 
 // SROLL
 const element = document.getElementById("container-card");
@@ -17,7 +19,7 @@ chevron_right.addEventListener("click", () => {
 });
 
 // GET /books
-for (let i = 0; i < BOOKS.length; i++) {
+for (let i = 0; i < data.length; i++) {
   const containerCard = document.querySelectorAll("#container-card");
   // CARD
   const card = document.createElement("div");
@@ -25,18 +27,18 @@ for (let i = 0; i < BOOKS.length; i++) {
 
   // CARD IMG
   const cardimg = document.createElement("img");
-  cardimg.setAttribute("src", BOOKS[i].cover);
-  cardimg.setAttribute("alt", BOOKS[i].judul);
+  cardimg.setAttribute("src", data[i].cover);
+  cardimg.setAttribute("alt", data[i].judul);
 
   // P-JUDUL
   const judulbk = document.createElement("p");
   judulbk.classList.add("judul-buku");
-  judulbk.textContent = BOOKS[i].judul;
+  judulbk.textContent = data[i].judul;
 
   // P-PENULIS
   const penulisbk = document.createElement("p");
   penulisbk.classList.add("penulis-buku");
-  penulisbk.textContent = BOOKS[i].penulis;
+  penulisbk.textContent = data[i].penulis;
 
   // HREF METHODS
   const hrefMethod = document.createElement("div");
@@ -72,7 +74,7 @@ for (let i = 0; i < BOOKS.length; i++) {
   buttonDONE.setAttribute("href", ".#");
   buttonDONE.textContent = "DONE";
 
-  if (BOOKS[i].isRecomended == true) {
+  if (data[i].isRecomended == true) {
     // MASUKIN
     containerCard[0].appendChild(card);
     card.appendChild(cardimg);
@@ -83,7 +85,7 @@ for (let i = 0; i < BOOKS.length; i++) {
     card.appendChild(hrefMethod);
     containerBtn.appendChild(buttonAdd);
     card.appendChild(containerBtn);
-  } else if (BOOKS[i].isRecomended == false && BOOKS[i].isCompleted == false) {
+  } else if (data[i].isRecomended == false && data[i].isCompleted == false) {
     // MASUKIN
     containerCard[1].appendChild(card);
     card.appendChild(cardimg);
@@ -95,7 +97,7 @@ for (let i = 0; i < BOOKS.length; i++) {
     containerBtn.appendChild(buttonDelete);
     containerBtn.appendChild(buttonDONE);
     card.appendChild(containerBtn);
-  } else if (BOOKS[i].isRecomended == false && BOOKS[i].isCompleted == true) {
+  } else if (data[i].isRecomended == false && data[i].isCompleted == true) {
     // MASUKIN
     containerCard[2].appendChild(card);
     card.appendChild(cardimg);
@@ -110,4 +112,7 @@ for (let i = 0; i < BOOKS.length; i++) {
   }
 }
 
-localStorage.setItem("rekomendasi", JSON.stringify(BOOKS));
+const cekStorage = localStorage.getItem("data");
+if (cekStorage == null) {
+  localStorage.setItem("data", JSON.stringify(BOOKS));
+}
