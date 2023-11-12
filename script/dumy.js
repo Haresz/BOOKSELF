@@ -53,4 +53,22 @@ export const BOOKS = [
     isCompleted: false,
     isRecomended: true,
   },
+  {
+    id: "A1239",
+    judul: "IKIGAI",
+    penulis: "HECTOR GARCIA",
+    cover: "./src/IKIGAI.jpg",
+    tahun: 2017,
+    isCompleted: false,
+    isRecomended: false,
+  },
+  {
+    id: "A1239",
+    judul: "IKIGAI",
+    penulis: "HECTOR GARCIA",
+    cover: "./src/IKIGAI.jpg",
+    tahun: 2017,
+    isCompleted: true,
+    isRecomended: false,
+  },
 ];
