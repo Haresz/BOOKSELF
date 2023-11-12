@@ -72,4 +72,4 @@ for (let i = 0; i < BOOKS.length; i++) {
   }
 }
 
-localStorage.setItem("data", JSON.stringify(BOOKS));
+localStorage.setItem("rekomendasi", JSON.stringify(BOOKS));

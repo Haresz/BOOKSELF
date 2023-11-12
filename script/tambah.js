@@ -1,20 +1,38 @@
-const judulBuku = document.getElementById("judul-buku");
-const pengarangBuku = document.getElementById("pengarang-buku");
-const tahunBuku = document.getElementById("tahun-buku");
-const deskripsiBuku = document.getElementById("deskripsi-buku");
-const coverBuku = document.getElementById("cover-buku");
 const submit = document.getElementById("submit");
 
-// const judul = judulBuku.value || "_";
-// const pengarang = pengarangBuku.value || "_";
-// const tahun = tahunBuku.value || "_";
-// const deskripsi = deskripsiBuku.value || "_";
-// const cover = coverBuku.value || "_";
+function generateId() {
+  return +new Date();
+}
 
-// const data = {
-//   judul: judul,
-//   pengarang: pengarang,
-//   tahun: tahun,
-//   deskripsi: deskripsi,
-//   cover: cover,
-// };
+function add() {
+  const judulBuku = document.getElementById("judul-buku").value;
+  const pengarangBuku = document.getElementById("pengarang-buku").value;
+  const tahunBuku = document.getElementById("tahun-buku").value;
+  const deskripsiBuku = document.getElementById("deskripsi-buku").value;
+  const coverBuku = document.getElementById("cover-buku").value;
+
+  const generateID = generateId();
+  const todoObject = {
+    id: generateID,
+    judul: judulBuku,
+    penulis: pengarangBuku,
+    cover: coverBuku,
+    tahun: tahunBuku,
+    isCompleted: false,
+    isRecomended: false,
+  };
+
+  // const dataStorage = localStorage.getItem("rekomendasi");
+  const data = [];
+  console.log(data);
+
+  data.push(todoObject);
+
+  console.log(data);
+
+  localStorage.setItem("data", JSON.stringify(data));
+}
+
+submit.addEventListener("click", (e) => {
+  add(e.target);
+});

@@ -211,12 +211,12 @@ nav .nav-fitur p {
   color: #eb8d00;
 }
 
-/* FORM INPUT */
-form {
+/* .FORM INPUT */
+.form {
   margin: 80px 100px 0;
 }
 
-form .container-label-input {
+.form .container-label-input {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -225,7 +225,7 @@ form .container-label-input {
   font-size: 1.5rem;
 }
 
-form .container-label-input input {
+.form .container-label-input input {
   width: 80%;
   padding: 0 8px;
   border-color: black;
@@ -233,12 +233,12 @@ form .container-label-input input {
   border-radius: 8px;
 }
 
-form .container-label-input input:focus-visible {
+.form .container-label-input input:focus-visible {
   border-color: black;
   border-width: 1px;
 }
 
-form .container-label-input textarea {
+.form .container-label-input textarea {
   min-width: 80%;
   max-width: 80%;
   min-height: 80px;
@@ -249,7 +249,7 @@ form .container-label-input textarea {
   border-radius: 8px;
 }
 
-form input[type="submit"] {
+.form button {
   min-width: 81%;
   max-width: 81%;
   min-height: 40px;
