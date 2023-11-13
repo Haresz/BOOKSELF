@@ -60,22 +60,43 @@ for (let i = 0; i < data.length; i++) {
   // ADD
   const buttonAdd = document.createElement("a");
   buttonAdd.classList.add("button-method", "button-add");
-  buttonAdd.setAttribute("href", "./tambah.html");
+  // buttonAdd.setAttribute("href", "./tambah.html");
+  buttonAdd.addEventListener("click", (e) => {
+    alert("YAKIN INGIN NAMBAHIN INI ?");
+    location.reload(true);
+    data[i].isRecomended = false;
+    localStorage.setItem("data", JSON.stringify(data));
+  });
   buttonAdd.textContent = "TAMBAH BUKU";
   // DELETE
   const buttonDelete = document.createElement("a");
   buttonDelete.classList.add("button-method", "button-delete");
-  buttonDelete.setAttribute("href", ".#");
+  buttonDelete.addEventListener("click", (e) => {
+    alert("HAPUS BUKU ?");
+    location.reload(true);
+    data.splice(i, 1);
+    localStorage.setItem("data", JSON.stringify(data));
+  });
   buttonDelete.textContent = "DELETE";
   //REPLECE
   const buttonReplece = document.createElement("a");
   buttonReplece.classList.add("button-method", "button-replece");
-  buttonReplece.setAttribute("href", ".#");
+  buttonReplece.addEventListener("click", (e) => {
+    alert("REPLECE BUKU ?");
+    location.reload(true);
+    data[i].isCompleted = false;
+    localStorage.setItem("data", JSON.stringify(data));
+  });
   buttonReplece.textContent = "REPLECE";
-  //REPLECE
+  //DONE
   const buttonDONE = document.createElement("a");
   buttonDONE.classList.add("button-method", "button-done");
-  buttonDONE.setAttribute("href", ".#");
+  buttonDONE.addEventListener("click", (e) => {
+    alert("BUKU INI SUDAH SELESAI ?");
+    location.reload(true);
+    data[i].isCompleted = true;
+    localStorage.setItem("data", JSON.stringify(data));
+  });
   buttonDONE.textContent = "DONE";
 
   if (data[i].isRecomended == true) {

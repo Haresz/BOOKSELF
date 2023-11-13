@@ -50,4 +50,5 @@ function add() {
 
 submit.addEventListener("click", (e) => {
   add(e.target);
+  window.location = "./index.html";
 });
