@@ -1,4 +1,8 @@
 import { BOOKS } from "./dumy.js";
+const cekStorage = localStorage.getItem("data");
+if (cekStorage == null) {
+  localStorage.setItem("data", JSON.stringify(BOOKS));
+}
 const dataStorage = localStorage.getItem("data");
 const data = JSON.parse(dataStorage);
 
@@ -110,9 +114,4 @@ for (let i = 0; i < data.length; i++) {
     containerBtn.appendChild(buttonReplece);
     card.appendChild(containerBtn);
   }
-}
-
-const cekStorage = localStorage.getItem("data");
-if (cekStorage == null) {
-  localStorage.setItem("data", JSON.stringify(BOOKS));
 }
