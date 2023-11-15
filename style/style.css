@@ -265,6 +265,10 @@ nav .nav-fitur p {
   cursor: pointer;
 }
 
+.form img {
+  margin-left: 19%;
+}
+
 /* DETAIL BUKU */
 
 .container-detail {

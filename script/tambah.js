@@ -32,6 +32,7 @@ function add() {
     penulis: pengarangBuku,
     cover: dataURL,
     tahun: tahunBuku,
+    deskripsi: deskripsiBuku,
     isCompleted: false,
     isRecomended: false,
   };

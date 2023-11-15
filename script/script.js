@@ -10,7 +10,7 @@ const data = JSON.parse(dataStorage);
 const element = document.getElementById("container-card");
 const chevron_left = document.getElementById("chevron_left");
 const chevron_right = document.getElementById("chevron_right");
-element.addEventListener("scroll", (a) => {
+element.addEventListener("scroll", () => {
   console.log(element.scrollLeft + "px");
 });
 chevron_left.addEventListener("click", () => {
@@ -50,6 +50,10 @@ for (let i = 0; i < data.length; i++) {
   const edit = document.createElement("a");
   edit.setAttribute("href", "./edit.html");
   edit.textContent = "edit ||";
+  edit.addEventListener("click", (e) => {
+    let sendData = JSON.stringify(i);
+    localStorage.setItem("ID", sendData);
+  });
   const detail = document.createElement("a");
   detail.setAttribute("href", "./detail.html");
   detail.textContent = " detail";
@@ -60,7 +64,6 @@ for (let i = 0; i < data.length; i++) {
   // ADD
   const buttonAdd = document.createElement("a");
   buttonAdd.classList.add("button-method", "button-add");
-  // buttonAdd.setAttribute("href", "./tambah.html");
   buttonAdd.addEventListener("click", (e) => {
     alert("YAKIN INGIN NAMBAHIN INI ?");
     location.reload(true);
