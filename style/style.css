@@ -278,13 +278,19 @@ nav .nav-fitur p {
   margin: 80px 100px 0;
 }
 
-.container-detail .cover-method img,
-.container-detail .cover-method #method-detail {
+.container-detail .cover-method img {
   width: 300px;
+}
+
+#method-container-detail {
+  display: flex;
+  flex-direction: column;
 }
 
 #method-detail {
   padding: 10px 95.99999px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .container-detail .cover-method img {
