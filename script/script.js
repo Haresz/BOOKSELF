@@ -57,6 +57,10 @@ for (let i = 0; i < data.length; i++) {
   const detail = document.createElement("a");
   detail.setAttribute("href", "./detail.html");
   detail.textContent = " detail";
+  detail.addEventListener("click", (e) => {
+    let sendData = JSON.stringify(i);
+    localStorage.setItem("ID", sendData);
+  });
 
   //######### BUTTONS METHOD #########
   const containerBtn = document.createElement("div");
