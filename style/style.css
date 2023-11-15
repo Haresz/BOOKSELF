@@ -318,3 +318,37 @@ nav .nav-fitur p {
 .hide {
   display: none;
 }
+
+/* POP UP */
+
+.pop-up {
+  position: fixed;
+  width: 500px;
+  top: 40%;
+  left: 35%;
+  border-radius: 10px;
+  border: black solid 4px;
+  background-color: white;
+  text-align: center;
+  font-family: "Imprima", sans-serif;
+}
+
+.top-popup {
+  width: 100%;
+  height: 30px;
+  background-color: #98e4ff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.container-method-button-popup {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 60px 10px;
+  font-size: 20px;
+}
+
+.container-method-button-popup .button-method {
+  width: 100px;
+  cursor: pointer;
+}
