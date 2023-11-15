@@ -22,11 +22,13 @@ chevron_right.addEventListener("click", () => {
   element.scrollLeft = coba;
 });
 
+let card;
+
 // GET /books
 for (let i = 0; i < data.length; i++) {
   const containerCard = document.querySelectorAll("#container-card");
   // CARD
-  const card = document.createElement("div");
+  card = document.createElement("div");
   card.classList.add("card");
 
   // CARD IMG
@@ -143,3 +145,24 @@ for (let i = 0; i < data.length; i++) {
     card.appendChild(containerBtn);
   }
 }
+
+// SEARCH BAR
+const searchInput = document.getElementById("search");
+searchInput.addEventListener("input", (e) => {
+  const value = e.target.value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    const judul = card.querySelector(".judul-buku").textContent.toLowerCase();
+    const penulis = card
+      .querySelector(".penulis-buku")
+      .textContent.toLowerCase();
+    const isVisible = judul.includes(value) || penulis.includes(value);
+
+    if (!isVisible) {
+      card.classList.add("hide");
+    } else {
+      card.classList.remove("hide");
+    }
+  });
+});

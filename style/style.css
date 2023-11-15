@@ -312,3 +312,9 @@ nav .nav-fitur p {
   line-height: 1.5;
   text-align: justify;
 }
+
+/* SEARCH BAR */
+
+.hide {
+  display: none;
+}
