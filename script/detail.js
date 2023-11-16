@@ -28,8 +28,8 @@ buttonAdd.addEventListener("click", (e) => {
   Popup("YAKIN INGIN NAMBAHIN INI ?", (result) => {
     if (result == "IYA") {
       location.reload(true);
-      data[i].isRecomended = false;
-      localStorage.setItem("data", JSON.stringify(data));
+      data.isRecomended = false;
+      localStorage.setItem("data", JSON.stringify(convert));
     }
   });
 });
@@ -41,8 +41,8 @@ buttonDelete.classList.add("button-method", "button-delete");
 buttonDelete.addEventListener("click", (e) => {
   Popup("KAMU YAKIN INI MAU DI HAPUS?", (result) => {
     if (result == "IYA") {
-      data.splice(i, 1);
-      localStorage.setItem("data", JSON.stringify(data));
+      convert.splice(ID, 1);
+      localStorage.setItem("data", JSON.stringify(convert));
       window.location = "./index.html";
     }
   });
@@ -56,8 +56,8 @@ buttonReplece.addEventListener("click", (e) => {
   Popup("MAU DI BACA LAGI ?", (result) => {
     if (result == "IYA") {
       location.reload(true);
-      data[i].isCompleted = false;
-      localStorage.setItem("data", JSON.stringify(data));
+      data.isCompleted = false;
+      localStorage.setItem("data", JSON.stringify(convert));
     }
   });
 });
@@ -70,8 +70,8 @@ buttonDONE.addEventListener("click", (e) => {
   Popup("SUDAH SELESAI BACA BUKUNYA ?", (result) => {
     if (result == "IYA") {
       location.reload(true);
-      data[i].isCompleted = true;
-      localStorage.setItem("data", JSON.stringify(data));
+      data.isCompleted = true;
+      localStorage.setItem("data", JSON.stringify(convert));
     }
   });
 });
