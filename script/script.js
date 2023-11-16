@@ -1,4 +1,5 @@
 import { BOOKS } from "./dumy.js";
+import { Popup } from "./popup.js";
 const cekStorage = localStorage.getItem("data");
 if (cekStorage == null) {
   localStorage.setItem("data", JSON.stringify(BOOKS));
@@ -71,11 +72,16 @@ for (let i = 0; i < data.length; i++) {
   const buttonAdd = document.createElement("a");
   buttonAdd.classList.add("button-method", "button-add");
   buttonAdd.addEventListener("click", (e) => {
-    alert("YAKIN INGIN NAMBAHIN INI ?");
-    location.reload(true);
-    data[i].isRecomended = false;
-    localStorage.setItem("data", JSON.stringify(data));
+    let status;
+    Popup("YAKIN INGIN NAMBAHIN INI ?", (result) => {
+      if (result == "IYA") {
+        location.reload(true);
+        data[i].isRecomended = false;
+        localStorage.setItem("data", JSON.stringify(data));
+      }
+    });
   });
+
   buttonAdd.textContent = "TAMBAH BUKU";
   // DELETE
   const buttonDelete = document.createElement("a");
