@@ -1,3 +1,4 @@
+import { Popup } from "./popup.js";
 const submit = document.getElementById("submit");
 const coverBuku = document.getElementById("cover-buku");
 
@@ -50,6 +51,10 @@ function add() {
 }
 
 submit.addEventListener("click", (e) => {
-  add(e.target);
-  window.location = "./index.html";
+  Popup("YAKIN INGIN NAMBAHIN INI ?", (result) => {
+    if (result == "IYA") {
+      add(e.target);
+      window.location = "./index.html";
+    }
+  });
 });

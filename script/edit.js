@@ -1,3 +1,4 @@
+import { Popup } from "./popup.js";
 // AMBIL DATA
 const dataStorage = localStorage.getItem("data");
 const ID = localStorage.getItem("ID");
@@ -51,8 +52,11 @@ function edit() {
 }
 
 submit.addEventListener("click", (e) => {
-  edit(e.target);
-  window.location = "./index.html";
-  alert("data berhasil di edit");
-  localStorage.removeItem("ID");
+  Popup("APAKAH DATA SUDAH BENAR ?", (result) => {
+    if (result == "IYA") {
+      edit(e.target);
+      window.location = "./index.html";
+      localStorage.removeItem("ID");
+    }
+  });
 });
