@@ -1,3 +1,4 @@
+import { Popup } from "./popup.js";
 // AMBIL DATA
 const dataStorage = localStorage.getItem("data");
 const ID = localStorage.getItem("ID");
@@ -24,10 +25,13 @@ const buttonAdd = document.createElement("a");
 buttonAdd.setAttribute("id", "method-detail");
 buttonAdd.classList.add("button-method", "button-add");
 buttonAdd.addEventListener("click", (e) => {
-  alert("YAKIN INGIN NAMBAHIN INI ?");
-  location.reload(true);
-  data.isRecomended = false;
-  localStorage.setItem("data", JSON.stringify(convert));
+  Popup("YAKIN INGIN NAMBAHIN INI ?", (result) => {
+    if (result == "IYA") {
+      location.reload(true);
+      data[i].isRecomended = false;
+      localStorage.setItem("data", JSON.stringify(data));
+    }
+  });
 });
 buttonAdd.textContent = "TAMBAH BUKU";
 // DELETE
@@ -35,10 +39,13 @@ const buttonDelete = document.createElement("a");
 buttonDelete.setAttribute("id", "method-detail");
 buttonDelete.classList.add("button-method", "button-delete");
 buttonDelete.addEventListener("click", (e) => {
-  alert("HAPUS BUKU ?");
-  location.reload(true);
-  data.splice(i, 1);
-  localStorage.setItem("data", JSON.stringify(convert));
+  Popup("KAMU YAKIN INI MAU DI HAPUS?", (result) => {
+    if (result == "IYA") {
+      data.splice(i, 1);
+      localStorage.setItem("data", JSON.stringify(data));
+      window.location = "./index.html";
+    }
+  });
 });
 buttonDelete.textContent = "DELETE";
 //REPLECE
@@ -46,10 +53,13 @@ const buttonReplece = document.createElement("a");
 buttonReplece.setAttribute("id", "method-detail");
 buttonReplece.classList.add("button-method", "button-replece");
 buttonReplece.addEventListener("click", (e) => {
-  alert("REPLECE BUKU ?");
-  location.reload(true);
-  data.isCompleted = false;
-  localStorage.setItem("data", JSON.stringify(convert));
+  Popup("MAU DI BACA LAGI ?", (result) => {
+    if (result == "IYA") {
+      location.reload(true);
+      data[i].isCompleted = false;
+      localStorage.setItem("data", JSON.stringify(data));
+    }
+  });
 });
 buttonReplece.textContent = "REPLECE";
 //DONE
@@ -57,10 +67,13 @@ const buttonDONE = document.createElement("a");
 buttonDONE.setAttribute("id", "method-detail");
 buttonDONE.classList.add("button-method", "button-done");
 buttonDONE.addEventListener("click", (e) => {
-  alert("BUKU INI SUDAH SELESAI ?");
-  location.reload(true);
-  data.isCompleted = true;
-  localStorage.setItem("data", JSON.stringify(convert));
+  Popup("SUDAH SELESAI BACA BUKUNYA ?", (result) => {
+    if (result == "IYA") {
+      location.reload(true);
+      data[i].isCompleted = true;
+      localStorage.setItem("data", JSON.stringify(data));
+    }
+  });
 });
 buttonDONE.textContent = "DONE";
 
