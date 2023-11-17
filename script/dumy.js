@@ -1,21 +1,21 @@
 export const BOOKS = [
   {
     id: "A1234",
-    judul: "IKIGAI",
-    penulis: "HECTOR GARCIA",
+    title: "IKIGAI",
+    author: "HECTOR GARCIA",
     cover: "./src/IKIGAI.jpg",
-    tahun: 2017,
+    year: 2017,
     deskripsi:
       "Buku Ikigai adalah buku yang membahas tentang filosofi hidup orang Jepang yang berfokus pada menemukan tujuan hidup yang memberikan rasa bahagia dan bermakna. Buku ini ditulis oleh Héctor García dan Francesc Miralles, dan pertama kali diterbitkan pada tahun 2016. Buku Ikigai terbagi menjadi empat bagian utama, yaitu: Apa itu Ikigai? Bagian ini menjelaskan konsep ikigai secara mendalam, serta manfaatnya bagi kehidupan kita. Rahasia Ikigai Orang Okinawa Bagian ini membahas tentang kebiasaan dan pola hidup masyarakat Okinawa, Jepang, yang terkenal dengan umur panjang dan kehidupannya yang bahagia. Menemukan Ikigai Anda Bagian ini memberikan panduan untuk menemukan ikigai kita sendiri, yaitu tujuan hidup yang memberikan rasa bahagia dan bermakna. Ikigai dalam Praktik Bagian ini berisi kisah-kisah nyata orang-orang yang telah menemukan ikigai mereka, serta tips untuk menerapkan ikigai dalam kehidupan kita sehari-hari. Buku Ikigai dikemas dengan cara yang menarik dan mudah dipahami, serta dilengkapi dengan ilustrasi-ilustrasi yang menarik. Buku ini juga didukung oleh penelitian ilmiah, sehingga kita dapat yakin bahwa konsep ikigai ini benar-benar bermanfaat bagi kehidupan kita. Secara keseluruhan, buku Ikigai adalah buku yang sangat bagus untuk dibaca bagi siapa saja yang ingin menemukan tujuan hidup yang memberikan rasa bahagia dan bermakna. Buku ini juga cocok untuk dibaca oleh orang-orang yang ingin hidup lebih bahagia dan lebih panjang umur. Berikut adalah gambaran buku Ikigai dalam bentuk satu paragraf: Buku Ikigai adalah buku yang berfokus pada menemukan tujuan hidup yang memberikan rasa bahagia dan bermakna. Buku ini membahas tentang filosofi hidup orang Jepang yang disebut ikigai, serta kebiasaan dan pola hidup masyarakat Okinawa, Jepang, yang terkenal dengan umur panjang dan kehidupannya yang bahagia. Buku Ikigai juga memberikan panduan untuk menemukan ikigai kita sendiri, serta tips untuk menerapkan ikigai dalam kehidupan kita sehari-hari. Buku ini dikemas dengan cara yang menarik dan mudah dipahami, serta didukung oleh penelitian ilmiah, sehingga menjadi buku yang sangat bagus untuk dibaca oleh siapa saja yang ingin menemukan tujuan hidup yang memberikan rasa bahagia dan bermakna.",
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1235",
-    judul: "Great At Work",
-    penulis: "Morten T. Hansen",
+    title: "Great At Work",
+    author: "Morten T. Hansen",
     cover: "./src/GreatAtWork.jpg",
-    tahun: 2018,
+    year: 2018,
     deskripsi: `Buku Great At Work adalah buku yang membahas tentang cara menjadi pekerja yang lebih efektif dan produktif. Buku ini ditulis oleh Morten T. Hansen, seorang profesor manajemen di Harvard Business School. Buku Great At Work terbagi menjadi empat bagian utama, yaitu:
 
     Bagian 1: The Myth of the Hard Worker
@@ -28,15 +28,15 @@ export const BOOKS = [
     Bagian ini membahas tentang pentingnya umpan balik untuk meningkatkan kinerja.
 
 Buku Great At Work telah diterjemahkan ke dalam lebih dari 20 bahasa dan telah terjual lebih dari 1 juta kopi di seluruh dunia. Buku ini telah dipuji oleh para kritikus dan telah memenangkan banyak penghargaan, termasuk Penghargaan McKinsey untuk Buku Bisnis Terbaik.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1236",
-    judul: "How To Be A Stoic",
-    penulis: "Massimo Pigliucci",
+    title: "How To Be A Stoic",
+    author: "Massimo Pigliucci",
     cover: "./src/HowtoBeAStoic.jpg",
-    tahun: 2017,
+    year: 2017,
     deskripsi: `
     How to Be a Stoic adalah buku karya Massimo Pigliucci, seorang filsuf dan ilmuwan asal Italia. Buku ini diterbitkan pada tahun 2017 dan merupakan buku pengantar yang membahas tentang filsafat Stoa.
     
@@ -58,15 +58,15 @@ Buku Great At Work telah diterjemahkan ke dalam lebih dari 20 bahasa dan telah t
     Stoa mengajarkan kita untuk hidup dengan sederhana dan bersahaja.
     Stoa mengajarkan kita untuk menjalani hidup dengan penuh makna dan tujuan.
     Jika Anda tertarik untuk mempelajari lebih lanjut tentang filsafat Stoa, buku How to Be a Stoic adalah tempat yang tepat untuk memulai.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1237",
-    judul: "Influence",
-    penulis: "Dale Carnegie",
+    title: "Influence",
+    author: "Dale Carnegie",
     cover: "./src/Influence.jpg",
-    tahun: 1936,
+    year: 1936,
     deskripsi: `Buku ini membahas tentang psikologi persuasi dan bagaimana kita dapat menggunakan prinsip-prinsip tersebut untuk mempengaruhi orang lain. Carnegie memberikan berbagai tips dan teknik yang dapat kita gunakan dalam kehidupan sehari-hari, baik dalam bisnis, hubungan pribadi, maupun situasi sosial lainnya.
 
       Berikut adalah beberapa poin penting yang dibahas dalam buku Influence:
@@ -85,30 +85,30 @@ Buku Great At Work telah diterjemahkan ke dalam lebih dari 20 bahasa dan telah t
       Dalam hubungan pribadi, Anda dapat menggunakan prinsip-prinsip persuasi untuk membangun hubungan yang lebih kuat dengan pasangan, teman, atau keluarga Anda.
       Dalam situasi sosial, Anda dapat menggunakan prinsip-prinsip persuasi untuk membuat kesan yang baik pada orang lain.
       Buku Influence adalah buku yang sangat berharga bagi siapa saja yang ingin meningkatkan keterampilan persuasi mereka.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1238",
-    judul: "MBA",
-    penulis: "Jason Barron",
+    title: "MBA",
+    author: "Jason Barron",
     cover: "./src/MBA.jpg",
-    tahun: 2017,
+    year: 2017,
     deskripsi: `Jason Barron menghabiskan 516 jam di kelas, menyelesaikan segunung pekerjaan rumah dan menghabiskan puluhan ribu dolar untuk menyelesaikan gelar MBA di BYU Marriott School of Business. Sepanjang jalan, alih-alih membuat catatan membosankan yang tidak akan pernah dia baca (atau gunakan) lagi, Jason membuat catatan sketsa untuk setiap kelas—secara visual menangkap poin-poin penting dari pendidikannya—dan menyediakan sumber daya yang menarik dan tak ternilai.
 
 
       Setelah menyelesaikan gelar MBA-nya, Jason meluncurkan kampanye Kickstarter yang sangat sukses dengan menyaring catatan yang sama ini menjadi buku yang diterbitkan sendiri untuk membantu calon pemimpin bisnis dari semua latar belakang dan tingkat pendapatan memahami konsep penting yang dipelajari di sekolah bisnis.
       
       Apakah Anda berpikir untuk mendaftar ke sekolah bisnis, saat ini sedang belajar bisnis di perguruan tinggi, atau selalu bertanya-tanya apa yang diajarkan dalam program MBA, buku yang sangat menghibur dan visual ini cocok untuk Anda.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1239",
-    judul: "The Intelligent Invertor",
-    penulis: "HECTOR GARCIA",
+    title: "The Intelligent Invertor",
+    author: "HECTOR GARCIA",
     cover: "./src/TheIntelligentInvertor.jpg",
-    tahun: 1949,
+    year: 1949,
     deskripsi: `Buku ini membahas tentang filosofi investasi value investing, yang menekankan pada analisis fundamental dan pembelian saham yang undervalued. Graham berpendapat bahwa investor yang sukses harus fokus pada jangka panjang dan menghindari spekulasi.
 
       Buku ini terbagi menjadi dua bagian utama:
@@ -124,15 +124,15 @@ Buku Great At Work telah diterjemahkan ke dalam lebih dari 20 bahasa dan telah t
       Investor harus melakukan riset sebelum berinvestasi. Jangan pernah berinvestasi hanya karena Anda menyukai nama perusahaan atau produknya.
       Investor harus diversifikasi portofolio mereka. Jangan menempatkan semua telur Anda dalam satu keranjang.
       Buku The Intelligent Investor adalah buku yang wajib dibaca oleh siapa saja yang ingin berinvestasi secara sukses.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: true,
   },
   {
     id: "A1239",
-    judul: "You Do You",
-    penulis: "Fellexandro Ruby ",
+    title: "You Do You",
+    author: "Fellexandro Ruby ",
     cover: "./src/YouDoYou.jpg",
-    tahun: 2020,
+    year: 2020,
     deskripsi: `
       You Do You: Discovering Life through Experiments and Self-Awareness adalah buku self-help karya Fellexandro Ruby yang diterbitkan pada tahun 2020. Buku ini membahas tentang pentingnya menemukan diri sendiri dan menjalani kehidupan yang bermakna.
       
@@ -159,7 +159,7 @@ Buku Great At Work telah diterjemahkan ke dalam lebih dari 20 bahasa dan telah t
       Kita harus berani mengambil risiko dan melakukan eksperimen dalam hidup.
       Kita harus menjadi sadar diri tentang diri kita sendiri, kekuatan, dan kelemahan kita.
       Buku You Do You adalah buku yang sangat direkomendasikan bagi siapa saja yang ingin menemukan diri sendiri dan menjalani kehidupan yang lebih bermakna.`,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: false,
   },
 ];

@@ -35,17 +35,17 @@ for (let i = 0; i < data.length; i++) {
   // CARD IMG
   const cardimg = document.createElement("img");
   cardimg.setAttribute("src", data[i].cover);
-  cardimg.setAttribute("alt", data[i].judul);
+  cardimg.setAttribute("alt", data[i].title);
 
   // P-JUDUL
   const judulbk = document.createElement("p");
   judulbk.classList.add("judul-buku");
-  judulbk.textContent = data[i].judul;
+  judulbk.textContent = data[i].title;
 
   // P-PENULIS
   const penulisbk = document.createElement("p");
   penulisbk.classList.add("penulis-buku");
-  penulisbk.textContent = data[i].penulis;
+  penulisbk.textContent = data[i].author;
 
   // HREF METHODS
   const hrefMethod = document.createElement("div");
@@ -102,7 +102,7 @@ for (let i = 0; i < data.length; i++) {
     Popup("MAU DI BACA LAGI ?", (result) => {
       if (result == "IYA") {
         location.reload(true);
-        data[i].isCompleted = false;
+        data[i].isComplete = false;
         localStorage.setItem("data", JSON.stringify(data));
       }
     });
@@ -115,7 +115,7 @@ for (let i = 0; i < data.length; i++) {
     Popup("SUDAH SELESAI BACA BUKUNYA ?", (result) => {
       if (result == "IYA") {
         location.reload(true);
-        data[i].isCompleted = true;
+        data[i].isComplete = true;
         localStorage.setItem("data", JSON.stringify(data));
       }
     });
@@ -133,7 +133,7 @@ for (let i = 0; i < data.length; i++) {
     card.appendChild(hrefMethod);
     containerBtn.appendChild(buttonAdd);
     card.appendChild(containerBtn);
-  } else if (data[i].isRecomended == false && data[i].isCompleted == false) {
+  } else if (data[i].isRecomended == false && data[i].isComplete == false) {
     // MASUKIN
     containerCard[1].appendChild(card);
     card.appendChild(cardimg);
@@ -145,7 +145,7 @@ for (let i = 0; i < data.length; i++) {
     containerBtn.appendChild(buttonDelete);
     containerBtn.appendChild(buttonDONE);
     card.appendChild(containerBtn);
-  } else if (data[i].isRecomended == false && data[i].isCompleted == true) {
+  } else if (data[i].isRecomended == false && data[i].isComplete == true) {
     // MASUKIN
     containerCard[2].appendChild(card);
     card.appendChild(cardimg);
@@ -167,9 +167,9 @@ searchInput.addEventListener("input", (e) => {
   const cards = document.querySelectorAll(".card");
 
   cards.forEach((card) => {
-    const judul = card.querySelector(".judul-buku").textContent.toLowerCase();
+    const judul = card.querySelector(".title-buku").textContent.toLowerCase();
     const penulis = card
-      .querySelector(".penulis-buku")
+      .querySelector(".author-buku")
       .textContent.toLowerCase();
     const isVisible = judul.includes(value) || penulis.includes(value);
 

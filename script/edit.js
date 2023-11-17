@@ -15,9 +15,9 @@ const prevCover = document.getElementById("preview-cover");
 const submit = document.getElementById("submit");
 let dataURL;
 
-judulBuku.value = data.judul;
-pengarangBuku.value = data.penulis;
-tahunBuku.value = data.tahun;
+judulBuku.value = data.title;
+pengarangBuku.value = data.author;
+tahunBuku.value = data.year;
 deskripsiBuku.value = data.deskripsi;
 prevCover.setAttribute("src", data.cover);
 coverBuku.addEventListener("change", (event) => {
@@ -40,12 +40,12 @@ if (dataURL === undefined || dataURL === null) {
 
 function edit() {
   data.id = data.id;
-  data.judul = judulBuku.value;
-  data.penulis = pengarangBuku.value;
+  data.title = judulBuku.value;
+  data.author = pengarangBuku.value;
   data.cover = dataURL;
-  data.tahun = tahunBuku.value;
+  data.year = Number(tahunBuku.value);
   data.deskripsi = deskripsiBuku.value;
-  data.isCompleted = data.isCompleted;
+  data.isComplete = data.isComplete;
   data.isRecomended = data.isRecomended;
 
   localStorage.setItem("data", JSON.stringify(convert));

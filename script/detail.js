@@ -14,8 +14,8 @@ const containerBtn = document.getElementById("method-container-detail");
 
 // MENAMPILKAN DATA
 coverBuku.setAttribute("src", data.cover);
-judulBuku.innerHTML = data.judul;
-pengarangBuku.innerHTML = data.penulis;
+judulBuku.innerHTML = data.title;
+pengarangBuku.innerHTML = data.author;
 deskripsiBuku.innerHTML = data.deskripsi;
 
 // MENAMBAHKAN METHODS
@@ -56,7 +56,7 @@ buttonReplece.addEventListener("click", (e) => {
   Popup("MAU DI BACA LAGI ?", (result) => {
     if (result == "IYA") {
       location.reload(true);
-      data.isCompleted = false;
+      data.isComplete = false;
       localStorage.setItem("data", JSON.stringify(convert));
     }
   });
@@ -70,7 +70,7 @@ buttonDONE.addEventListener("click", (e) => {
   Popup("SUDAH SELESAI BACA BUKUNYA ?", (result) => {
     if (result == "IYA") {
       location.reload(true);
-      data.isCompleted = true;
+      data.isComplete = true;
       localStorage.setItem("data", JSON.stringify(convert));
     }
   });
@@ -80,11 +80,11 @@ buttonDONE.textContent = "DONE";
 if (data.isRecomended == true) {
   // MASUKIN
   containerBtn.appendChild(buttonAdd);
-} else if (data.isRecomended == false && data.isCompleted == false) {
+} else if (data.isRecomended == false && data.isComplete == false) {
   // MASUKIN
   containerBtn.appendChild(buttonDelete);
   containerBtn.appendChild(buttonDONE);
-} else if (data.isRecomended == false && data.isCompleted == true) {
+} else if (data.isRecomended == false && data.isComplete == true) {
   // MASUKIN
   containerBtn.appendChild(buttonDelete);
   containerBtn.appendChild(buttonReplece);

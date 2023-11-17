@@ -29,12 +29,12 @@ function add() {
 
   const todoObject = {
     id: generateID,
-    judul: judulBuku,
-    penulis: pengarangBuku,
+    title: judulBuku,
+    author: pengarangBuku,
     cover: dataURL,
     tahun: Number(tahunBuku),
     deskripsi: deskripsiBuku,
-    isCompleted: false,
+    isComplete: false,
     isRecomended: false,
   };
 
