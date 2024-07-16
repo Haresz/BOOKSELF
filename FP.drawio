@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T03:40:11.821Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="p4yNf2ubBwLBk2ckM6xI" version="24.6.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-07-16T07:01:14.169Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="hNSejmxlyef8bbve9EJh" version="24.6.5" type="github" pages="3">
   <diagram name="Halaman-1" id="aOgjBCfFI_ndV_T7Zwzt">
     <mxGraphModel dx="2100" dy="1236" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1096,7 +1096,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ZlDXchSSMKvEhvpk1Lel" name="Halaman-3">
-    <mxGraphModel dx="1500" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1400" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1104,15 +1104,15 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-2" value="START" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="70" width="120" height="80" as="geometry" />
+          <mxGeometry x="364" y="40" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="414" y="410" as="targetPoint" />
+            <mxPoint x="424" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-4" value="LOGIN" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="300" width="120" height="60" as="geometry" />
+          <mxGeometry x="364" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-7" target="Si53vsFnORn0WB2R6vNo-4">
           <mxGeometry relative="1" as="geometry" />
@@ -1121,32 +1121,32 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-7" value="have &lt;br&gt;&amp;nbsp;account?&amp;nbsp;&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="374" y="180" width="80" height="80" as="geometry" />
+          <mxGeometry x="384" y="150" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-9" target="Si53vsFnORn0WB2R6vNo-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="560" y="330" />
+              <mxPoint x="570" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-9" value="Register" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="500" y="190" width="120" height="60" as="geometry" />
+          <mxGeometry x="510" y="160" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-12" target="Si53vsFnORn0WB2R6vNo-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Si53vsFnORn0WB2R6vNo-12" value="DHASBOARD VIEW" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="410" width="120" height="60" as="geometry" />
+        <mxCell id="Si53vsFnORn0WB2R6vNo-12" value="DASHBOARD VIEW" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="364" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-14" value="APPROVE / CANCEL&lt;br&gt;&amp;nbsp;/ REJECT TRANSACTION&amp;nbsp;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="206" y="760" width="176" height="60" as="geometry" />
+          <mxGeometry x="216" y="730" width="176" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-15" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="1060" width="120" height="80" as="geometry" />
+          <mxGeometry x="364" y="1080" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-17" value="EDIT PROFILE" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="760" width="120" height="60" as="geometry" />
+          <mxGeometry x="670" y="730" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-18" target="Si53vsFnORn0WB2R6vNo-25">
           <mxGeometry relative="1" as="geometry" />
@@ -1161,46 +1161,46 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-18" value="PROPERTY MANAGEMENT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="525" width="120" height="60" as="geometry" />
+          <mxGeometry x="364" y="495" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-20" target="Si53vsFnORn0WB2R6vNo-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-20" value="CRUD &lt;br&gt;PROPERTY" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="750" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-21" target="Si53vsFnORn0WB2R6vNo-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-21" value="CRUD &lt;br&gt;ROOM" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="870" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="840" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-22" value="CRUD &lt;br&gt;SPECIAL PRICE" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="990" width="120" height="60" as="geometry" />
+          <mxGeometry x="160" y="960" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-23" value="CRUD &lt;br&gt;ROOM &lt;br&gt;AVAILABILTY" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="990" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="960" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-24" value="VIEW SALES REPORT" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="474" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="484" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-25" target="Si53vsFnORn0WB2R6vNo-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-25" value="VIEW TAB&amp;nbsp;&lt;br&gt;TRANSACTION" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="234" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="244" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-26" target="Si53vsFnORn0WB2R6vNo-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-26" value="VIEW TAB&amp;nbsp;&lt;br&gt;PROPERTY" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-27" target="Si53vsFnORn0WB2R6vNo-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-27" value="VIEW TAB&amp;nbsp;&lt;br&gt;PROFILE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="660" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="670" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Si53vsFnORn0WB2R6vNo-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.588;entryY=0.04;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Si53vsFnORn0WB2R6vNo-21" target="Si53vsFnORn0WB2R6vNo-23">
           <mxGeometry relative="1" as="geometry" />
